@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the alphabet from a to z with \n
+ * main - prints the alphabet from a to z with \n without q and e
  *
  *  Return: gives zero if program is good
  */
