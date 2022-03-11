@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/*
- *main - prints the size of datatypes
- *Return : 0 if properly closed
+/**
+ * main - prints the size of datatypes
+ * Return : 0 if properly closed
  */
 int main(void)
 {
