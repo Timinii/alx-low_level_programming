@@ -2,7 +2,7 @@
 
 /**
  * main - prints the size of datatypes
- * Return : 0 if properly closed
+ * Return: 0 if properly closed
  */
 int main(void)
 {
