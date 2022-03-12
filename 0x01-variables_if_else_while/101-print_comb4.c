@@ -28,11 +28,11 @@ int main(void)
 						putchar(ch);
 						putchar(cH);
 						putchar(Ch);
-						if (ch != '7')
-						{
-							putchar(',');
-							putchar(' ');
-						}					
+					if (ch != '7')
+					{
+						putchar(',');
+						putchar(' ');
+					}
 					}
 					Ch++;
 				}
