@@ -16,19 +16,19 @@ int main(void)
 	{
 		while (prvcH <= '9')
 		{
-			if(prvch >= prvcH)
+			if (prvch >= prvcH)
 				;
 			else
 			{
 				while (ch <= '9')
 				{
-					if(prvcH >= ch)
+					if (prvcH >= ch)
 						;
 					else
 					{
-					while(cH <= '9')
+					while (cH <= '9')
 					{
-					if(ch >= cH)
+					if (ch >= cH)
 						;
 					else
 					{
@@ -50,7 +50,7 @@ int main(void)
 				prvcH++;
 			}
 			}
-			prvcH ='0';
+			prvcH = '0';
 			prvch++;
 	}
 	putchar('\n');
