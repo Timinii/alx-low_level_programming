@@ -1,57 +1,32 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combinations of two digits with repeats
- *
- *  Return: gives zero if program is good
+ * main - prints all possible combinations of two two-digit numbers
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int ch = '0';
-	int cH = '0';
-	int prvch = '0';
-	int prvcH = '0';
+	int i, j;
 
-	while (prvch <= '9')
+	for (i = 0; i < 100; i++)
 	{
-		while (prvcH <= '9')
+		for (j = 0; j < 100; j++)
 		{
-			if (prvch >= prvcH)
-				;
-			else
+			if (i < j)
 			{
-				while (ch <= '9')
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
 				{
-					if (prvcH >= ch)
-						;
-					else
-					{
-					while (cH <= '9')
-					{
-					if (ch >= cH)
-						;
-					else
-					{
-					putchar(prvch);
-					putchar(prvcH);
-					putchar(' ');
-					putchar(ch);
-					putchar(cH);
 					putchar(',');
 					putchar(' ');
-					}
-					cH++;
-					}
-					}
-					cH = '0';
-					ch++;
 				}
-				ch = '0';
-				prvcH++;
 			}
-			}
-			prvcH = '0';
-			prvch++;
+
+		}
 	}
 	putchar('\n');
 	return (0);
