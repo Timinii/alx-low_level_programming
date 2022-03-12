@@ -20,38 +20,38 @@ int main(void)
 				;
 			else
 			{
-			while (ch <= '9')
-			{
-				if(prvcH >= ch)
-					;
-				else
+				while (ch <= '9')
 				{
-				while(cH <= '9')
-				{
+					if(prvcH >= ch)
+						;
+					else
+					{
+					while(cH <= '9')
+					{
 					if(ch >= cH)
 						;
 					else
 					{
-						putchar(prvch);
-						putchar(prvcH);
-						putchar(' ');
-						putchar(ch);
-						putchar(cH);
-						putchar(',');
-						putchar(' ');
+					putchar(prvch);
+					putchar(prvcH);
+					putchar(' ');
+					putchar(ch);
+					putchar(cH);
+					putchar(',');
+					putchar(' ');
 					}
 					cH++;
+					}
+					}
+					cH = '0';
+					ch++;
 				}
-				}
-				cH = '0';
-				ch++;
+				ch = '0';
+				prvcH++;
 			}
-			ch = '0';
-			prvcH++;
-		}
-		}
-		prvcH ='0';
-		prvch++;
+			}
+			prvcH ='0';
+			prvch++;
 	}
 	putchar('\n');
 	return (0);
