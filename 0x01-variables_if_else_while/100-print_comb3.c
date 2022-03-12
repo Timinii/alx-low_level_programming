@@ -14,13 +14,17 @@ int main(void)
 	{
 		while (cH <= '9')
 		{
-			if (ch >= cH);
+			if (ch >= cH)
+				;
 			else
 			{
 				putchar(ch);
 				putchar(cH);
-				putchar(',');
-				putchar(' ');
+				if (ch != '8')
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 			cH++;
 		}
