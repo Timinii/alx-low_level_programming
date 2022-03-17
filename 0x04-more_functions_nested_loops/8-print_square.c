@@ -3,8 +3,10 @@
 /**
  * print_square - prints a sqaure followed by a new line
  * @size: integer input
- * Return: Always 0.
+ *
+ * Return: void
  */
+
 void print_square(int size)
 {
 	int i, j;
@@ -15,11 +17,13 @@ void print_square(int size)
 		{
 			for (j = 0; j < size; j++)
 			{
-				_putchar(35);
+				_putchar('#');
 			}
 			_putchar('\n');
-			j = 0;
 		}
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
