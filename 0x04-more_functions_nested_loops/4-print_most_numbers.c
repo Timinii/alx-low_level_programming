@@ -12,11 +12,8 @@ void print_most_numbers(void)
 
 	for (i = 0; i < 11; i++)
 	{
-		if (text[i] == '2' || text[i] == '4')
-		{
-			i++;
-		}
-		_putchar(text[i]);
+		if (text[i] != '2' || text[i] != '4')
+			_putchar(text[i]);
 	}
 	_putchar('\n');
 }
