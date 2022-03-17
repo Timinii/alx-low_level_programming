@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - prints numbers for 0 to 9
+ * print_most_numbers - prints numbers for 0 to 9
  *
  * Return: Alwats 0.
  */
